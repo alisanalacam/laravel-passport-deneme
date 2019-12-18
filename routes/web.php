@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/settings', 'SettingsController@index')->name('settings');
+Auth::routes();
