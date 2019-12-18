@@ -10,6 +10,8 @@ cd laravel-passport-deneme
 
 ##### Projeyi çalıştırma
 ```
+docker run --rm -v $(pwd):/app composer install
+sudo chown -R $USER:$USER ~/laravel-app
 cp .env.example .env
 docker-compose up -d
 ```
